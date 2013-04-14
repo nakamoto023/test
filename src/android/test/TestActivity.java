@@ -8,6 +8,8 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class TestActivity extends Activity implements OnClickListener {
+	TextView mText;
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -17,7 +19,7 @@ public class TestActivity extends Activity implements OnClickListener {
 	}
 
 	public void onClick(View v) {
-		TextView text = (TextView) findViewById(id.textView1);
-		text.setText("セット！");
+		mText = (TextView) findViewById(id.textView1);
+		mText.setText("セット！");
 	}
 }
